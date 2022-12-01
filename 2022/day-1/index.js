@@ -14,4 +14,6 @@ for (const group in groups) {
   elfsCals.push(cals);
 }
 
-console.log(elfsCals.sort((a, b) => b - a)[0])
+const [first, second, third] = elfsCals.sort((a, b) => b - a);
+
+console.log(first + second + third);
