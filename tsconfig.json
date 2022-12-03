@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM", "ES7"],
+    "outDir": "build",
+    "esModuleInterop": true
+  }
+}

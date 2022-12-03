@@ -1,5 +1,5 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
 
 const input = fs.readFileSync(path.join(__dirname, "input.txt")).toString();
 
@@ -9,7 +9,7 @@ const elfsCals = [];
 for (const group in groups) {
   let cals = 0;
 
-  groups[group].split("\n").forEach((elfCals) => cals += Number(elfCals))
+  groups[group].split("\n").forEach((elfCals) => (cals += Number(elfCals)));
 
   elfsCals.push(cals);
 }
